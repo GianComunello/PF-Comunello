@@ -123,6 +123,9 @@ padding: 100px;
   .parrafofooter{
     display:flex;
   }
+  .nav-link{
+   margin-left:5px;
+  }
 }
 /*mobile inicio*/
 @media (max-width: 576px){
