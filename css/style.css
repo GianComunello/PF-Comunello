@@ -84,6 +84,7 @@
   color: #343aeb;
   font-size: 5em;
   margin:30px;
+  text-align:center;
 }
 #video h2 {
   color: black;
@@ -117,7 +118,7 @@ padding: 100px;
      
   }
   footer{
-    height: 120vh;
+    height: 100vh;
   }
   .parrafofooter{
     display:flex;
@@ -129,7 +130,7 @@ padding: 100px;
     height: 100vh;
   }
   #presentacion h1{
-font-size:3.5em;
+font-size:3.2em;
   }
   #presentacion h2{
     font-size: 2em;
@@ -431,6 +432,7 @@ margin:10px;
  text-decoration:none;
  text-align:center;
  font-weight:bold;
+ margin:10px;
 }
 #linktienda a:hover{
   background-color: lightgrey;
