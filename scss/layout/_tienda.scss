@@ -1,0 +1,20 @@
+#tienda {
+  background-color: #343aeb;
+  h1 {
+    text-align: center;
+    font-size: 4em;
+    padding: 50px;
+    font-weight: bold;
+    color: black;
+  }
+}
+@media (max-width: 768px) {
+  #productos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .producto {
+    height: auto;
+    width: 80%;
+  }
+}
