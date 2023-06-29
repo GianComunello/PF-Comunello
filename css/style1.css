@@ -289,16 +289,6 @@ footer div {
   color: black;
 }
 
-@media (max-width: 768px) {
-  #productos {
-    flex-direction: column;
-    align-items: center;
-  }
-  .producto {
-    height: auto;
-    width: 80%;
-  }
-}
 #grid {
   display: grid;
   grid-template-columns: 70% 30%;
@@ -377,7 +367,8 @@ footer div {
   padding-bottom: 10px;
 }
 #contacto #listacontacto ul li {
-  margin-bottom: 30px;
+  margin: 30px;
+  margin-left: 0px;
   font-size: 1.1em;
   list-style-type: none;
   padding: 10px;
@@ -391,7 +382,6 @@ footer div {
   display: flex;
 }
 #contacto #listacontacto ul li img {
-  margin-left: 0px;
   width: 4em;
   height: 4em;
   margin-right: 20px;
@@ -494,6 +484,12 @@ footer div {
   border-radius: 15px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+#productos .producto h2 {
+  font-size: 1.7em;
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
+}
 #productos .producto p {
   font-size: 1.5em;
   text-align: center;
@@ -505,6 +501,7 @@ footer div {
   margin: 10px;
 }
 #productos .productofoto img {
+  margin-bottom: 50px;
   height: 80%;
   width: 90%;
 }
@@ -516,6 +513,17 @@ a {
   margin: 25px;
 }
 
+@media (max-width: 768px) {
+  #productos {
+    flex-direction: column;
+    align-items: center;
+  }
+  #productos .producto {
+    height: auto;
+    width: 80%;
+    margin: 10px;
+  }
+}
 #linktienda {
   display: flex;
   justify-content: center;
@@ -539,6 +547,28 @@ a {
 }
 #linktienda a:hover {
   background-color: lightgrey;
+}
+
+.linkproducto {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+}
+.linkproducto a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 2.5em;
+  width: 70%;
+  border-radius: 20px;
+  background-color: #343bbc;
+  font-weight: bold;
+}
+.linkproducto a:hover {
+  background-color: grey;
 }
 
 /*# sourceMappingURL=style1.css.map */
