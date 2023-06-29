@@ -72,14 +72,15 @@
       margin-bottom: 50px;
       height: 90%;
       width: 90%;
-      transition: height 1s, width 1s;
+      transition: height 2s, width 2s;
       &:hover {
         height: 100%;
         width: 100%;
       }
+      }
     }
   }
-}
+
 
 a {
   font-size: 1.5em;
