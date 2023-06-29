@@ -1,6 +1,6 @@
 #objetivo {
   background-color: #343aeb;
-  height: 150vh;
+  height: auto;
   h1 {
     text-align: center;
     font-size: 70px;
@@ -8,22 +8,24 @@
     font-weight: bold;
     color: black;
   }
+.contenedorobj {
+  flex-direction:column;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
   p {
     font-size: 30px;
     padding: 20px;
     text-align: center;
+    color:black;
+    margin:30px;
   }
   img {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 500px;
     margin: 20px;
   }
 }
-.contenedorobj {
-  background-color: grey;
-  border: 1px solid black;
-  height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }

@@ -1,6 +1,6 @@
 #ofrecemos {
   background-color: #343aeb;
-  height: 150vh;
+  height: auto;
   h1 {
     text-align: center;
     font-size: 5em;
@@ -19,48 +19,19 @@
 
   .contenedor {
     flex-direction: column;
-  }
-
-  .servicio1 {
-    width: auto;
-    height: auto;
-    margin: 10px;
-    .serv1img img {
-      height: 13em;
+    align-items:center;
+    .servicios {
       width: 80%;
-      margin: 20px;
-    }
+      height: auto;
+      margin: 10px;
+      .servimg img {
+        height: 13em;
+        width: 80%;
+        margin: 20px;
+      }
+     }
   }
-  .servicio2 {
-    width: auto;
-    height: auto;
-    margin: 10px;
-    .serv2img img {
-      height: 13em;
-      width: 80%;
-      margin: 20px;
-    }
-  }
-  .servicio3 {
-    width: auto;
-    height: auto;
-    margin: 10px;
-    .serv3img img {
-      height: 13em;
-      width: 80%;
-      margin: 20px;
-    }
-  }
-  .servicio4 {
-    width: auto;
-    height: auto;
-    margin: 10px;
-    .serv4img img {
-      height: 13em;
-      width: 80%;
-      margin: 20px;
-    }
-  }
+  
 }
 @media (max-width: 576px) {
   #ofrecemos h1 {

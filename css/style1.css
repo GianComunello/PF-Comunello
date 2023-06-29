@@ -10,18 +10,21 @@
   background-color: grey;
   padding: 20px;
 }
-
-.container-fluid {
+.navbar .container-fluid {
   padding-left: 0px;
+}
+.navbar .container-fluid .navbar-brand {
+  height: 100px;
+  width: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+.navbar .container-fluid .navbar-brand .logonav {
+  height: 100%;
+  width: 100%;
 }
 
 .navbar-expand-md {
-  padding: 0px;
-}
-
-.navbar-brand {
-  height: 100px;
-  width: 100px;
   padding: 0px;
 }
 
@@ -29,20 +32,9 @@
   color: black;
   font-size: 1.5em;
 }
-
-.logonav {
-  height: 100%;
-  width: 100%;
-}
-
-a:hover {
+.nav-link:hover {
   text-decoration: underline;
   font-size: 1.6em;
-}
-
-#listacontacto a:hover {
-  text-decoration: underline;
-  font-size: 1em;
 }
 
 footer {
@@ -78,6 +70,7 @@ footer div {
   display: flex;
   list-style-type: none;
   align-items: center;
+  padding-left: 0px;
 }
 .contenedorfooter ul li {
   display: flex;
@@ -93,13 +86,13 @@ footer div {
   text-decoration: none;
   align-items: center;
 }
-.contenedorfooter ul li a:hover {
+.contenedorfooter ul li:hover {
   text-decoration: underline;
 }
-.contenedorfooter ul li a .contenedorfooter ul li a img {
+.contenedorfooter ul li img {
+  align-items: center;
   height: 100px;
   width: 100px;
-  align-items: center;
 }
 
 .redes2 {
@@ -108,6 +101,17 @@ footer div {
   color: black;
 }
 
+@media (max-width: 768px) {
+  footer {
+    height: 110vh;
+  }
+  footer .parrafofooter {
+    display: flex;
+  }
+  footer .contenedorfooter ul {
+    flex-direction: column;
+  }
+}
 #grid1 {
   background-color: #343aeb;
   display: grid;
@@ -129,25 +133,14 @@ footer div {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: url("../imagenes horizonte/tallerninos.jpg");
+  background-image: url("/imagenes horizonte/banner1.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 120vh;
 }
-#presentacion h1 {
-  font-weight: bold;
-  color: #343aeb;
-  font-size: 8em;
-  margin-bottom: 20%;
-  margin-top: 1em;
-}
-#presentacion h2 {
-  font-weight: bold;
-  color: #343aeb;
-  font-size: 5em;
-  margin: 30px;
-  text-align: center;
+#presentacion .contenedorinicio {
+  display: none;
 }
 
 #video h2 {
@@ -163,6 +156,30 @@ footer div {
   padding: 100px;
 }
 
+/*cambiar banner*/
+@media (max-width: 920px) {
+  #presentacion {
+    background-image: url("/imagenes horizonte/tallerninos.jpg");
+  }
+  #presentacion .contenedorinicio {
+    display: block;
+  }
+  #presentacion h1 {
+    font-weight: bold;
+    text-align: center;
+    color: #343aeb;
+    font-size: 8em;
+    margin-bottom: 20%;
+    margin-top: 1em;
+  }
+  #presentacion h2 {
+    font-weight: bold;
+    color: #343aeb;
+    font-size: 5em;
+    margin: 30px;
+    text-align: center;
+  }
+}
 /*tablet inicio*/
 @media (max-width: 768px) {
   #presentacion h1 {
@@ -174,16 +191,6 @@ footer div {
   }
   #video h2 {
     font-size: 3em;
-  }
-  .contenedorfooter ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  footer {
-    height: 95vh;
-  }
-  .parrafofooter {
-    display: flex;
   }
   .nav-link {
     margin-left: 5px;
@@ -200,13 +207,10 @@ footer div {
   #presentacion h2 {
     font-size: 2em;
   }
-  .contenedorfooter ul li {
-    padding: 10px;
-  }
 }
 #objetivo {
   background-color: #343aeb;
-  height: 150vh;
+  height: auto;
 }
 #objetivo h1 {
   text-align: center;
@@ -215,29 +219,29 @@ footer div {
   font-weight: bold;
   color: black;
 }
-#objetivo p {
+#objetivo .contenedorobj {
+  flex-direction: column;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#objetivo .contenedorobj p {
   font-size: 30px;
   padding: 20px;
   text-align: center;
+  color: black;
+  margin: 30px;
 }
-#objetivo img {
-  height: 300px;
-  width: 300px;
+#objetivo .contenedorobj img {
+  height: 400px;
+  width: 500px;
   margin: 20px;
-}
-
-.contenedorobj {
-  background-color: grey;
-  border: 1px solid black;
-  height: 100vh;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 #ofrecemos {
   background-color: #343aeb;
-  height: 150vh;
+  height: auto;
 }
 #ofrecemos h1 {
   text-align: center;
@@ -256,43 +260,14 @@ footer div {
   }
   .contenedor {
     flex-direction: column;
+    align-items: center;
   }
-  .servicio1 {
-    width: auto;
-    height: auto;
-    margin: 10px;
-  }
-  .servicio1 .serv1img img {
-    height: 13em;
+  .contenedor .servicios {
     width: 80%;
-    margin: 20px;
-  }
-  .servicio2 {
-    width: auto;
     height: auto;
     margin: 10px;
   }
-  .servicio2 .serv2img img {
-    height: 13em;
-    width: 80%;
-    margin: 20px;
-  }
-  .servicio3 {
-    width: auto;
-    height: auto;
-    margin: 10px;
-  }
-  .servicio3 .serv3img img {
-    height: 13em;
-    width: 80%;
-    margin: 20px;
-  }
-  .servicio4 {
-    width: auto;
-    height: auto;
-    margin: 10px;
-  }
-  .servicio4 .serv4img img {
+  .contenedor .servicios .servimg img {
     height: 13em;
     width: 80%;
     margin: 20px;
@@ -329,29 +304,47 @@ footer div {
   grid-template-columns: 70% 30%;
   grid-template-rows: auto auto auto;
   grid-template-areas: "header header" "main aside" "footer footer";
+  background-color: #343aeb;
 }
 #grid header {
   grid-area: header;
 }
 #grid #aside {
   grid-area: aside;
-  background-color: #343aeb;
+  background-color: lightgrey;
+  margin: 10px;
   display: flex;
   align-items: center;
-}
-#grid .biografia {
-  text-align: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 100%;
-  margin: 20px;
-  border: 1px solid black;
-  color: black;
-}
-#grid .biografia .fotocontacto {
   height: auto;
   width: auto;
+  border-radius: 20px;
+}
+#grid #aside .biografia {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: auto;
+  color: black;
+}
+#grid #aside .biografia h1 {
+  margin: 20px;
+  text-align: center;
+}
+#grid #aside .biografia p {
+  margin: 20px;
+}
+#grid #aside .biografia li {
+  list-style-type: none;
+  margin: 10px;
+}
+#grid #aside .biografia .contenedorfotocontacto {
+  display: flex;
+  justify-content: center;
+}
+#grid #aside .biografia .contenedorfotocontacto .fotocontacto {
+  height: auto;
+  width: 70%;
   margin: 10px;
 }
 #grid footer {
@@ -369,50 +362,53 @@ footer div {
   font-weight: bold;
   color: black;
 }
-#contacto h1 h2 {
+#contacto h2 {
   text-align: left;
   font-size: 2em;
   padding: 30px;
   font-weight: bold;
   color: black;
 }
-
-#listacontacto {
+#contacto #listacontacto {
   margin-bottom: 50px;
 }
-#listacontacto img {
-  width: 4em;
-  height: 4em;
-  margin-right: 20px;
+#contacto #listacontacto ul {
+  margin: 0px;
+  padding-bottom: 10px;
 }
-#listacontacto ul li {
-  margin: 30px;
-  font-size: 1.88em;
-  margin-left: 20px;
+#contacto #listacontacto ul li {
+  margin-bottom: 30px;
+  font-size: 1.1em;
   list-style-type: none;
   padding: 10px;
-  display: flex;
   color: black;
+  display: flex;
+  flex-direction: row;
 }
-#listacontacto ul li a {
+#contacto #listacontacto ul li a {
   text-decoration: none;
   color: black;
   display: flex;
 }
-
-.redes {
+#contacto #listacontacto ul li img {
+  margin-left: 0px;
+  width: 4em;
+  height: 4em;
+  margin-right: 20px;
+}
+#contacto #listacontacto ul li .redes {
   display: flex;
   align-items: center;
 }
 
 @media (max-width: 768px) {
   #grid {
-    grid-template-columns: 100%;
+    grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "header" "main" "aside" "footer";
   }
-  #aside {
-    height: 100vh;
+  #grid #aside {
+    background-color: #343aeb;
   }
   #listacontacto ul li {
     font-size: 1.5em;
@@ -448,93 +444,34 @@ footer div {
   justify-content: space-evenly;
 }
 
-.servicio1 {
+.servicios {
   background-color: grey;
   color: black;
   width: 20%;
-  height: 100vh;
+  height: auto;
   text-align: center;
   border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
 }
-.servicio1 h2 {
-  margin: 10px;
-  font-size: 1.8em;
+.servicios h2 {
+  margin: 20px;
+  font-size: 1.6em;
+  font-weight: bold;
 }
-.servicio1 .servicio1 p {
+.servicios p {
   font-size: 1em;
   margin: 10px;
 }
-
-.serv1img img {
-  height: 9em;
-  width: 90%;
-  border-radius: 15px;
+.servicios .servimg {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 60%;
+  margin-bottom: 30px;
 }
-
-.servicio2 {
-  background-color: grey;
-  border-radius: 15px;
-  color: black;
-  width: 20%;
-  height: 100vh;
-  text-align: center;
-}
-.servicio2 h2 {
-  margin: 10px;
-  font-size: 1.8em;
-}
-.servicio2 p {
-  font-size: 1em;
-  margin: 10px;
-}
-
-.servicio2 .serv2img img {
-  height: 9em;
-  width: 90%;
-  border-radius: 15px;
-}
-
-.servicio3 {
-  background-color: grey;
-  border-radius: 15px;
-  color: black;
-  width: 20%;
-  height: 100vh;
-  text-align: center;
-}
-.servicio3 h2 {
-  margin: 10px;
-  font-size: 1.7em;
-}
-.servicio3 p {
-  font-size: 1em;
-  margin: 10px;
-}
-
-.servicio3 .serv3img img {
-  height: 9em;
-  width: 90%;
-  border-radius: 15px;
-}
-
-.servicio4 {
-  background-color: grey;
-  border-radius: 15px;
-  color: black;
-  width: 20%;
-  height: 100vh;
-  text-align: center;
-}
-.servicio4 h2 {
-  margin: 10px;
-  font-size: 1.7em;
-}
-.servicio4 .servicio4 p {
-  font-size: 1em;
-  margin: 10px;
-}
-
-.servicio4 .serv4img img {
+.servicios .servimg img {
   height: 9em;
   width: 90%;
   border-radius: 15px;
@@ -546,8 +483,7 @@ footer div {
   flex-wrap: wrap;
   padding: 20px;
 }
-
-.producto {
+#productos .producto {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -558,26 +494,22 @@ footer div {
   border-radius: 15px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.producto a:hover {
-  text-decoration: underline;
-  color: blue;
-}
-
-.productofoto {
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-}
-.productofoto img {
-  height: 80%;
-  width: 90%;
-}
-.productofoto p {
+#productos .producto p {
   font-size: 1.5em;
   text-align: center;
   margin: 10px;
 }
-.productofoto a {
+#productos .productofoto {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+#productos .productofoto img {
+  height: 80%;
+  width: 90%;
+}
+
+a {
   font-size: 1.5em;
   text-decoration: none;
   color: black;

@@ -22,25 +22,14 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-image: url("../imagenes horizonte/tallerninos.jpg");
+  background-image: url("/imagenes horizonte/banner1.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 120vh;
-  h1 {
-    font-weight: bold;
-    color: #343aeb;
-    font-size: 8em;
-    margin-bottom: 20%;
-    margin-top: 1em;
-  }
-  h2 {
-    font-weight: bold;
-    color: #343aeb;
-    font-size: 5em;
-    margin: 30px;
-    text-align: center;
-  }
+  .contenedorinicio{
+   display:none;
+}
 }
 #video {
   h2 {
@@ -56,6 +45,31 @@
     padding: 100px;
   }
 }
+/*cambiar banner*/
+@media (max-width: 920px) {
+  #presentacion{
+  background-image: url("/imagenes horizonte/tallerninos.jpg");
+  .contenedorinicio{
+    display: block;
+  }
+  h1 {
+    font-weight: bold;
+    text-align:center;
+    color: #343aeb;
+    font-size: 8em;
+    margin-bottom: 20%;
+    margin-top: 1em;
+  }
+  h2 {
+    font-weight: bold;
+    color: #343aeb;
+    font-size: 5em;
+    margin: 30px;
+    text-align: center;
+  }
+}
+ 
+}
 /*tablet inicio*/
 @media (max-width: 768px) {
   #presentacion {
@@ -70,16 +84,7 @@
   #video h2 {
     font-size: 3em;
   }
-  .contenedorfooter ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  footer {
-    height: 95vh;
-  }
-  .parrafofooter {
-    display: flex;
-  }
+  
   .nav-link {
     margin-left: 5px;
   }
@@ -95,7 +100,5 @@
       font-size: 2em;
     }
   }
-  .contenedorfooter ul li {
-    padding: 10px;
-  }
+  
 }
