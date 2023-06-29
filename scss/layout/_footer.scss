@@ -30,7 +30,7 @@ footer {
     display: flex;
     list-style-type: none;
     align-items: center;
-    padding-left:0px;
+    padding-left: 0px;
     li {
       display: flex;
       flex-direction: column;
@@ -44,14 +44,14 @@ footer {
         text-decoration: none;
         align-items: center;
       }
-        &:hover {
-          text-decoration: underline;
-        }
-        img{
-          align-items:center;
-          height: 100px;
-          width: 100px;
-        }
+      &:hover {
+        text-decoration: underline;
+      }
+      img {
+        align-items: center;
+        height: 100px;
+        width: 100px;
+      }
     }
   }
 }
@@ -61,7 +61,7 @@ footer {
   font-size: 20px;
   color: black;
 }
-@media (max-width:768px){
+@media (max-width: 768px) {
   footer {
     height: 110vh;
     .parrafofooter {
@@ -72,6 +72,3 @@ footer {
     }
   }
 }
-
-
-

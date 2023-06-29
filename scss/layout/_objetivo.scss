@@ -8,24 +8,24 @@
     font-weight: bold;
     color: black;
   }
-.contenedorobj {
-  flex-direction:column;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
-  p {
-    font-size: 30px;
-    padding: 20px;
-    text-align: center;
-    color:black;
-    margin:30px;
+  .contenedorobj {
+    flex-direction: column;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 30px;
+      padding: 20px;
+      text-align: center;
+      color: black;
+      margin: 30px;
+    }
+    img {
+      height: 400px;
+      width: 500px;
+      margin: 20px;
+    }
   }
-  img {
-    height: 400px;
-    width: 500px;
-    margin: 20px;
-  }
-}
 }

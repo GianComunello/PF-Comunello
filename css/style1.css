@@ -157,9 +157,9 @@ footer div {
 }
 
 /*cambiar banner*/
-@media (max-width: 920px) {
+@media (max-width: 1169px) {
   #presentacion {
-    background-image: url("/imagenes horizonte/tallerninos.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("/imagenes horizonte/taller1.jpeg");
   }
   #presentacion .contenedorinicio {
     display: block;
@@ -502,8 +502,13 @@ footer div {
 }
 #productos .productofoto img {
   margin-bottom: 50px;
-  height: 80%;
+  height: 90%;
   width: 90%;
+  transition: height 1s, width 1s;
+}
+#productos .productofoto img:hover {
+  height: 100%;
+  width: 100%;
 }
 
 a {
