@@ -10,15 +10,13 @@ footer {
     margin-top: 20px;
   }
   div {
-    display: flex;
-    justify-content: center;
+    @include flex();
     align-items: center;
   }
 }
 
 .parrafofooter {
-  display: flex;
-  justify-content: center;
+  @include flex();
 }
 .contenedorfooter {
   display: flex;

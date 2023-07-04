@@ -1,0 +1,7 @@
+/*variables*/
+$colorprincipal:#343aeb;
+/*mixing*/
+@mixin flex(){
+    display:flex;
+    justify-content:center;
+}

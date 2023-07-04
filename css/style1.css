@@ -6,6 +6,8 @@
   font-family: "Roboto", sans-serif;
 }
 
+/*variables*/
+/*mixing*/
 .navbar {
   background-color: grey;
   padding: 20px;
@@ -592,7 +594,7 @@ a {
   height: 2.5em;
   width: 70%;
   border-radius: 20px;
-  background-color: #343bbc;
+  background-color: #343aeb;
   font-weight: bold;
 }
 .linkproducto a:hover {

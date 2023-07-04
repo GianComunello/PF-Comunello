@@ -38,8 +38,7 @@
         margin: 10px;
       }
       .contenedorfotocontacto {
-        display: flex;
-        justify-content: center;
+        @include flex();
         .fotocontacto {
           height: auto;
           width: 70%;
@@ -55,7 +54,7 @@
 }
 
 #contacto {
-  background-color: #343aeb;
+  background-color: $colorprincipal;
   grid-area: main;
   h1 {
     text-align: center;
@@ -117,7 +116,7 @@
       "aside"
       "footer";
     #aside {
-      background-color: #343aeb;
+      background-color: $colorprincipal;
     }
   }
 
