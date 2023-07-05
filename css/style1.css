@@ -141,7 +141,7 @@ footer div {
 
 #presentacion {
   flex-direction: column;
-  background-image: url("./imageneshorizonte/banner.jpeg");
+  background-image: url("../imageneshorizonte/banner.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -167,7 +167,7 @@ footer div {
 /*cambiar banner*/
 @media (max-width: 1169px) {
   #presentacion {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("./imageneshorizonte/taller1.jpeg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../imageneshorizonte/taller1.jpeg");
   }
   #presentacion .contenedorinicio {
     display: block;
