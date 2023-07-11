@@ -20,7 +20,7 @@
 
 #presentacion {
   flex-direction: column;
-  background-image: url("../imageneshorizonte/banner.jpeg");
+  background-image: url("../imageneshorizonte/banner1.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -90,6 +90,7 @@
     margin-left: 5px;
   }
 }
+
 /*mobile inicio*/
 @media (max-width: 576px) {
   #presentacion {

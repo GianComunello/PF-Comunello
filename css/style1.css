@@ -141,7 +141,7 @@ footer div {
 
 #presentacion {
   flex-direction: column;
-  background-image: url("../imageneshorizonte/banner.jpeg");
+  background-image: url("../imageneshorizonte/banner1.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -458,7 +458,11 @@ footer div {
 }
 
 .servicios {
-  background-color: grey;
+  background: rgb(78, 82, 105);
+  background: linear-gradient(149deg, rgb(78, 82, 105) 20%, rgb(102, 122, 151) 48%, rgb(148, 187, 233) 71%, rgba(148, 187, 233, 0.8295693277) 100%);
+  box-shadow: 0px -2px 24px 3px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 0px -2px 24px 3px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px -2px 24px 3px rgba(0, 0, 0, 0.32);
   color: black;
   width: 20%;
   height: auto;
@@ -505,7 +509,9 @@ footer div {
   background-color: lightgrey;
   margin: 30px;
   border-radius: 15px;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px -2px 24px 10px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 0px -2px 24px 10px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px -2px 24px 10px rgba(0, 0, 0, 0.32);
 }
 #productos .producto h2 {
   font-size: 1.7em;
@@ -575,6 +581,9 @@ a {
 }
 #linktienda a:hover {
   background-color: lightgrey;
+  box-shadow: 0px -2px 24px 10px rgba(0, 0, 0, 0.32);
+  -webkit-box-shadow: 0px -2px 24px 10px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px -2px 24px 10px rgba(0, 0, 0, 0.32);
 }
 
 .linkproducto {
@@ -597,6 +606,36 @@ a {
 }
 .linkproducto a:hover {
   background-color: grey;
+}
+
+#botontienda {
+  position: fixed;
+  border: 3px solid black;
+  background-color: grey;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 10px;
+  transition: all 1s;
+}
+#botontienda:hover {
+  background-color: lightgrey;
+  box-shadow: -1px 3px 43px 16px rgb(0, 0, 0);
+  -webkit-box-shadow: -1px 3px 43px 16px rgb(0, 0, 0);
+  -moz-box-shadow: -1px 3px 43px 16px rgb(0, 0, 0);
+}
+#botontienda a {
+  display: block;
+}
+#botontienda img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  #botontienda a img {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 /*# sourceMappingURL=style1.css.map */
