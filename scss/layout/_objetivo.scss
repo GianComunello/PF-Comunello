@@ -29,19 +29,19 @@
   }
 }
 /* Tablet: Objetivo */
-@media (max-width: 768px){
-  #objetivo{
-  h1 {
-    font-size: 3em;
+@media (max-width: 768px) {
+  #objetivo {
+    h1 {
+      font-size: 3em;
+    }
+    .contenedorobj {
+      p {
+        font-size: 1.5em;
+      }
+      img {
+        height: 300px;
+        width: auto;
+      }
+    }
   }
-  .contenedorobj {
-     p {
-      font-size: 1.5em;
-    }
-    img {
-      height: 300px;
-      width: auto;
-    }
-} 
-} 
- }
+}

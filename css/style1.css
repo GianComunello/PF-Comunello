@@ -16,8 +16,8 @@
   padding-left: 0px;
 }
 .navbar .container-fluid .navbar-brand {
-  height: 6em;
-  width: 6em;
+  height: 5em;
+  width: 5em;
   padding: 0px;
   margin: 0px;
 }
@@ -85,7 +85,7 @@ footer div {
 .contenedorfooter ul li {
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 20px;
   font-weight: bold;
   align-items: center;
 }
@@ -95,6 +95,7 @@ footer div {
   color: black;
   text-decoration: none;
   align-items: center;
+  margin: 0px;
 }
 .contenedorfooter ul li a:hover {
   text-decoration: underline;
@@ -419,9 +420,6 @@ footer div {
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto;
     grid-template-areas: "header" "main" "aside" "footer";
-  }
-  #grid #aside {
-    background-color: #343aeb;
   }
   #listacontacto ul li {
     font-size: 1.5em;

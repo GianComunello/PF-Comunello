@@ -4,8 +4,8 @@
   .container-fluid {
     padding-left: 0px;
     .navbar-brand {
-      height: 6em;
-      width: 6em;
+      height: 5em;
+      width: 5em;
       padding: 0px;
       margin: 0px;
       .logonav {
@@ -27,11 +27,10 @@
     font-size: 1.6em;
   }
 }
-@media (max-width: 960px){
-  .nav-link{
-    font-size:1.2em;
+@media (max-width: 960px) {
+  .nav-link {
+    font-size: 1.2em;
     &:hover {
-    
       font-size: 1.4em;
     }
   }
